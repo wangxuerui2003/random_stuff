@@ -1,5 +1,5 @@
 hello world
 this is a test file
-I said something locally
+I said something remotely and also locally
 feel free to change!
 bye!
