@@ -6,7 +6,7 @@
 /*   By: wxuerui <wxuerui@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 10:57:55 by wxuerui           #+#    #+#             */
-/*   Updated: 2022/06/15 10:58:32 by wxuerui          ###   ########.fr       */
+/*   Updated: 2022/06/15 16:47:09 by wxuerui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ void	ft_putstr(char *str);
 int		ft_strlen(char *str);
 int		get_line_len(char *map);
 void	spread(int pos, char *map, int current, int line_len);
+void	free_tree(node *head);
 
 #endif

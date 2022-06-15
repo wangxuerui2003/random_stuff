@@ -6,7 +6,7 @@
 /*   By: wxuerui <wxuerui@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 10:57:48 by wxuerui           #+#    #+#             */
-/*   Updated: 2022/06/15 10:57:49 by wxuerui          ###   ########.fr       */
+/*   Updated: 2022/06/15 17:23:37 by wxuerui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,18 @@ void	spread(int pos, char *map, int current, int line_len)
 			spread(pos + line_len + 1, map, current, line_len);
 		}
 	}
+	free_tree(head);
+}
+
+void	free_tree(node *head)
+{
+	if (head->left)
+		free_tree(head->left);
+	if (head->right)
+		free_tree(head->right);
+	if (head->top)
+		free_tree(head->top);
+	if (head->bot)
+		free_tree(head->bot);
+	free(head);
 }
